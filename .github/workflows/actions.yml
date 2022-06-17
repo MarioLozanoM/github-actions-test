@@ -8,6 +8,8 @@ jobs:
         run: |
           pwd
           ls
+      - name: checkout
+        uses: actions/checout@v1
       - name: Simple js Actions
         id: greet
         uses: actions/hello-world-javascript-action@v1
